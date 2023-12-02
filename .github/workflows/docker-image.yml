@@ -12,5 +12,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.dev --tag pgjessee/docker-learn
     - name: Test the container
-      run: docker container run pgjessee/docker-learn npm test
+      run: docker container run -e CI=true pgjessee/docker-learn npm test
 
