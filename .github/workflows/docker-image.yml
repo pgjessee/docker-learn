@@ -12,6 +12,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.dev --tag pgjessee/docker-learn
   test:
+    runs-on: ubuntu-latest
     needs: build
     steps:
     - uses: actions/checkout@v4
