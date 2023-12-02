@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build ../ --file Dockerfile.dev --tag pgjessee/docker-learn
+      run: docker build ../../ --file Dockerfile.dev --tag pgjessee/docker-learn
   # test:
   #   needs: build
